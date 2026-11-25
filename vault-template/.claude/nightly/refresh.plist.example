@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- macOS only, and inactive here. Setup fills in the four CAPITAL placeholders
+     in a copy, shows it, and turns it on after the person's yes. -->
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>local.ouroboros-notes.refresh</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>HOME_PATH/Library/Application Support/ouroboros-notes/refresh.sh</string>
+		<string>VAULT_PATH</string>
+		<string>QMD_PATH</string>
+	</array>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>NODE_FOLDER:/usr/bin:/bin</string>
+	</dict>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>2</integer>
+		<key>Minute</key>
+		<integer>0</integer>
+	</dict>
+	<key>StandardOutPath</key>
+	<string>HOME_PATH/Library/Logs/ouroboros-refresh.log</string>
+	<key>StandardErrorPath</key>
+	<string>HOME_PATH/Library/Logs/ouroboros-refresh.log</string>
+</dict>
+</plist>

@@ -1,0 +1,9 @@
+# Linux only, and inactive here. Setup fills in the four CAPITAL placeholders in a
+# copy, shows it, and turns it on after the person's yes.
+[Unit]
+Description=Ouroboros search refresh
+
+[Service]
+Type=oneshot
+Environment="PATH=NODE_FOLDER:/usr/bin:/bin"
+ExecStart=/bin/bash "HOME_PATH/.local/share/ouroboros-notes/refresh.sh" "VAULT_PATH" "QMD_PATH"

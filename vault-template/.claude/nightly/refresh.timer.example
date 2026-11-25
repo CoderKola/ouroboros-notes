@@ -1,0 +1,11 @@
+# Linux only, and inactive here. Setup replaces the OnCalendar line if the person
+# chose another schedule.
+[Unit]
+Description=Ouroboros search refresh
+
+[Timer]
+OnCalendar=*-*-* 02:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

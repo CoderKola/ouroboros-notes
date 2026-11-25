@@ -1,0 +1,13 @@
+# Private folders stay out of Git
+documents/
+inbox/
+personal/finances/
+personal/health/
+business/*/clients/
+business/*/contracts/
+business/*/finances/
+graphify-out/
+.qmd/index.sqlite*
+.claude/settings.local.json
+.DS_Store
+.qmd/*.lock.sqlite*

@@ -1,0 +1,6 @@
+open personal
+open templates
+private documents
+private inbox
+private personal/finances
+private personal/health

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "qmd": {
+      "env": { "CI": "true" },
+      "command": "qmd",
+      "args": ["mcp"]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "ask": [
+      "Bash(rm *)",
+      "Edit(/FOLDERS.txt)",
+      "Edit(/.qmd/**)",
+      "Edit(/.mcp.json)",
+      "Read(/business/*/clients/**)",
+      "Read(/business/*/contracts/**)",
+      "Read(/business/*/finances/**)",
+      "Read(/personal/finances/**)",
+      "Read(/personal/health/**)",
+      "Read(documents/**)",
+      "Read(inbox/**)",
+      "Read(/documents/**)",
+      "Read(/inbox/**)"
+    ]
+  }
+}
